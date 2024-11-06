@@ -60,7 +60,8 @@ conda install ipykernel
 After installing `ipykernel`, you can register your Conda environment as a Jupyter kernel so that you can use it within Jupyter Notebook/Lab. Run the following command:
 
 ```bash
-python -m ipykernel install --prefix=./venv/ --name '<ENV_NAME>'
+python -m ipykernel install --prefix=./venv/ --name '<ENV_NAME>' #venv
+ipython kernel install --user --name=env_name_kern #conda (conda env must be activated first)
 ```
 
 - `--name=myenv`: The name of the Conda environment you want to register.
